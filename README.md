@@ -1,2 +1,2 @@
-# imc-3B2
-Dados o peso e a altura, calcula o IMC e informa se está ideal.
+# IMC - Gabriel Valadares
+Calcula o IMC com base em seu peso e altura, e informa a sua situação.
