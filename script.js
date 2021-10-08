@@ -11,11 +11,9 @@ function imc () {
 
         const valorIMC = (peso/(altura**2)).toFixed(2);
         
-        const imcMin = (18.50).toFixed(2)
-        const pesoMin = (imcMin * (altura**2)).toFixed(2);
+        const pesoMin = (18.50 * (altura**2)).toFixed(2);
         
-        const imcMax = (24.99).toFixed(2)
-        const pesoMax = (imcMax * (altura**2)).toFixed(2);
+        const pesoMax = (24.99 * (altura**2)).toFixed(2);
         
         let classificacao = '';
 
