@@ -31,7 +31,7 @@ function imc () {
             classificacao = 'com obesidade grau III.';
         }
 
-        resultado.textContent = `Olá, ${nome}! Com ${peso}kg e ${altura}m, seu IMC é ${valorIMC}. Atualmente, você está ${classificacao}. Procure manter o seu peso entre ${pesoMin} kg e ${pesoMax} kg`;
+        resultado.textContent = `Olá, ${nome}! Com ${peso}kg e ${altura}m, seu IMC é ${valorIMC}. Atualmente, você está ${classificacao} Procure manter o seu peso entre ${pesoMin} kg e ${pesoMax} kg.`;
 
     }else {
         resultado.textContent = 'Para calcular o seu IMC , preencha todos os campos.';
