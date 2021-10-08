@@ -11,7 +11,11 @@ function imc () {
 
         const valorIMC = (peso/(altura**2)).toFixed(2);
         
-        const pesoCloned = (valorIMC * (altura**2)).toFixed(2);
+        const imcMin = 18,50
+        const pesoMin = (imcMin * (altura**2)).toFixed(2);
+        
+        const imcMax = 24,99
+        const pesoMax = (imcMax * (altura**2)).toFixed(2);
         
         let classificacao = '';
 
@@ -29,7 +33,7 @@ function imc () {
             classificacao = 'com obesidade grau III.';
         }
 
-        resultado.textContent = `Olá, ${nome}! Com ${peso}kg e ${altura}m, seu IMC é ${valorIMC}. Atualmente, você está ${classificacao} | seu peso calculado: ${pesoCloned}`;
+        resultado.textContent = `Olá, ${nome}! Com ${peso}kg e ${altura}m, seu IMC é ${valorIMC}. Atualmente, você está ${classificacao} | Procure manter o seu peso entre ${pesoMin} kg e ${pesoMax} kg`;
 
     }else {
         resultado.textContent = 'Para calcular o seu IMC , preencha todos os campos.';
